@@ -103,6 +103,22 @@
     height:auto;
 }
 
+/* 디스플레이 영역 CSS */
+.display-section{
+    margin-top:59px;
+    text-align:center;
+}
+
+.display-section .sec-tit{
+    margin-bottom:30px;
+}
+    
+.display-section .desc{
+    font-family:'PT Serif';
+    color:#616161;
+    line-height:1.9;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
     /* 기본 CSS */
@@ -139,10 +155,44 @@
     .header .menu-toggle-btn{
         display:none !important;
     }
+    
+    /* 디스플레이 영역 CSS */
+    .display-section{
+        margin-top:95px;
+    }
 }
 
 /* PC용 CSS */
 @media all and (min-width:1132px){
+    /* 디스플레이 영역 CSS */
+    .display-section{
+        text-align:left;
+    }
+        
+    .display-section .sec-tit{
+        float:left;
+        margin-bottom:0;
+    }
+        
+    .display-section .desc{
+        position:relative;
+        float:right;
+        padding-left:20px;
+        font-family:'PT Serif';
+        color:#616161; 
+        line-height:1.9;
+    }
+        
+    .display-section .desc:before{
+        display:block;
+        position:absolute;
+        top:9px;
+        left:0;
+        width:2px;
+        height:44px;
+        background:#e0e0e0;
+        content:"";
+    } 
 }
 </style>
 </head>
