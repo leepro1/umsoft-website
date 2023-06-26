@@ -104,6 +104,20 @@ body {
 }
 
 /* 슬라이더 영역 CSS */
+.slider {
+  position: relative;
+}
+.slider .image-text {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.2em;
+}
 .slider img{
     display:block;
     width:100%;
@@ -536,6 +550,7 @@ body {
 
     <article class="slider">
         <img src="images/p-images/slide01.jpg" alt="">
+        <div class="image-text">UmSoft는 살아있다. <br>진화하는 UmSoft.</div>
     </article>
 
     <section class="content">
