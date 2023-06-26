@@ -6,8 +6,8 @@
 <title>UmSoft</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="">
-<link rel="shortcut icon" href="images/favicon/favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="images/favicon/indigo-touch-icon.png">
+<link rel="shortcut icon" href="images/favicon/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="images/favicon/favicon.png">
 <script src="js/jquery.min.js"></script>
 <style>  
 /* 모바일용 CSS */
@@ -48,6 +48,9 @@
     margin-top:77px;
     background:#3f51b5;
 } 
+body {
+      font-family: "Nunito", sans-serif;
+}
 
 /* 헤더 영역 CSS */
 .header{
@@ -62,6 +65,10 @@
     color: #3f51b5;
     font-weight: normal;
 }
+.header .logo a img{
+    height: 26px;
+    padding-right: 4px;
+}
 .header .gnb{
     display: none;
     position: absolute;
@@ -69,9 +76,10 @@
     left: 0;
     width: 100%;
     background: #3f51b5;
+    font-weight: bold;
 }
 .header .gnb li{
-    border-bottom: 1px solid #303f9f;
+    border-bottom: 1px solid #3f51b5;
 }
 .header .gnb li a{
     display: block;
@@ -290,6 +298,7 @@
     margin:21px 0;
     color:#3f51b5;
     text-align:center;
+    line-height:1.9;
 }    
 
 /* 태블릿용 CSS */
@@ -507,7 +516,7 @@
 <body>
     <div id="wrap">
     <header class="header cfixed">
-        <h1 class="logo"><a href="">UmSoft</a></h1>
+        <h1 class="logo"><a href=""><img src="images/favicon/favicon.png">UmSoft</a></h1>
             <nav>
                 <ul class="gnb">
                     <li><a href="">HOME</a></li>
@@ -532,9 +541,10 @@
     <section class="content">
         <section class="display-section">
             <div class="container">
-                <h2 class="sec-tit">UmSoft is</h2>
+                <h2 class="sec-tit">UmSoft는 살아있다</h2>
                 <p class="desc">
-                    UmSoft는 살아있다.<br>UmSoft is alive. 
+                    "살아있는 우리"라는 비전으로<br>
+                    움직이고, 활동하고, 달리고 혹은 날기도 한다. 
                 </p>
             </div>
         </section>
@@ -544,35 +554,28 @@
                 <ul class="promo-list">
                     <li>
                         <a href="">
-                            <img src="images/s-images/promo01.png" alt="">
-                            <h3>HOME</h3>
-                            <p>UmSoft는 살아있다.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/s-images/promo02.png" alt="">
+                            <img src="images/s-images/ic_introduce.png" alt="">
                             <h3>회사소개</h3>
                             <p>UmSoft는 살아있다.</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="images/s-images/promo03.png" alt="">
+                            <img src="images/s-images/ic_service.png" alt="">
                             <h3>서비스</h3>
                             <p>UmSoft는 살아있다.</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="images/s-images/promo04.png" alt="">
+                            <img src="images/s-images/ic_news.png" alt="">
                             <h3>뉴스룸</h3>
                             <p>UmSoft는 살아있다.</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="images/s-images/promo04.png" alt="">
+                            <img src="images/s-images/ic_blog.png" alt="">
                             <h3>블로그</h3>
                             <p>UmSoft는 살아있다.</p>
                         </a>
@@ -584,7 +587,7 @@
         <hr class="divider">
 
         <section class="work-section cfixed">
-            <h2 class="sec-tit">서비스</h2>
+            <h2 class="sec-tit">UmSoft 서비스</h2>
             <ul class="work-list">
                 <li>
                     <a href="">
@@ -622,42 +625,6 @@
                         <img src="images/p-images/work04.jpg">
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <div class="info">
-                            <h3>service5</h3>
-                            <span>work5</span>
-                        </div>
-                        <img src="images/p-images/work05.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="info">
-                            <h3>service6</h3>
-                            <span>work6</span>
-                        </div>
-                        <img src="images/p-images/work06.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="info">
-                            <h3>service7</h3>
-                            <span>work7</span>
-                        </div>
-                        <img src="images/p-images/work07.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="info">
-                            <h3>service8</h3>
-                            <span>work8</span>
-                        </div>
-                        <img src="images/p-images/work08.jpg">
-                    </a>
-                </li>
             </ul>
         </section>
 
@@ -665,7 +632,7 @@
 
         <section class="blog-section">
             <div class="container">
-                <h2 class="sec-tit">블로그</h2>
+                <h2 class="sec-tit">UmSoft 소식</h2>
                 <ul class="blog-list">
                     <li>
                         <a href=""><img src="images/p-images/blog01.jpg" alt=""></a>
@@ -716,7 +683,10 @@
     <footer class="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.128475697272!2d126.73352399999999!3d37.457688399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7b86cbc8220d%3A0x4d0fc01e64599d89!2z7J247LKc6rSR7Jet7IucIOuCqOuPmeq1rCDrsLHrspTroZwxMjTrsojquLggNDM!5e0!3m2!1sko!2skr!4v1687537888325!5m2!1sko!2skr" 
             frameholder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
-        <p class="copyrught">UmSoft</p>
+        <p class="copyright">
+            <strong>(주)UmSoft</strong><br>
+            대표 : 이희주 | 주소 : 인천광역시 남동구 백범로 124번길 43
+        </p>
     </footer>
     </div>
 </body>
