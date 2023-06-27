@@ -46,6 +46,7 @@ body {
 .header{
     position:relative;
     padding:18px 5%;
+    z-index:2;
 }
 .header .logo{
     float: left;
@@ -95,18 +96,8 @@ body {
 
 /* 슬라이더 영역 CSS */
 .slider {
-  position: relative;
-}
-.slider .image-text {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  line-height: 1.2em;
+    position: relative;
+    z-index:1;
 }
 .slider img{
     display:block;
@@ -114,6 +105,16 @@ body {
     max-width:100%;
     height:auto;
 }
+.slider .image-text {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw; /* 이미지에 맞게 상대적인 크기로 설정 */
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+  }
 
 /* 디스플레이 영역 CSS */
 .display-section{
@@ -340,6 +341,12 @@ body {
     }
     .header .menu-toggle-btn{
         display:none !important;
+    }
+
+    /* 슬라이더 영역 CSS */
+    .image-text {
+        font-size: 16px;
+        bottom: 10px;
     }
     
     /* 디스플레이 영역 CSS */
