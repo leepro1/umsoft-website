@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 슬라이더 영역 CSS */
+.introduce-slider {
+    position: static;
+}
+.introduce-slider img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+/* 디스플레이 영역 CSS */
+.introduce-display{
+    margin-top:59px;
+    text-align:center;
+}
+.introduce-display .sec-tit{
+    margin-bottom:30px;
+}
+.introduce-display h3{
+    margin-bottom:30px;
+    line-height:1.6;
+}
+.introduce-display .desc{
+    font-family:'PT Serif';
+    color:#424242;
+    line-height:1.6;
+}
+
+/* 프로모션 영역 CSS */
+.introduce-promotion{
+    margin-top:68px;
+}
+.introduce-promotion .sec-tit{
+    margin-bottom:68px;
+    text-align:center;
+}
+.introduce-promotion .promo-list li{
+    margin-top:52px;
+    text-align:center;
+}
+.introduce-promotion .promo-list li:first-child{
+    margin-top:0;
+}
+.introduce-promotion .promo-list li img{
+    height:52px;
+}
+.introduce-promotion .promo-list li h3{
+    margin:29px 0 20px 0;
+    color:#3f51b5;
+    font-weight:normal;
+}
+.introduce-promotion .promo-list li p{
+    font-size:14px;
+    font-family:'PT Serif';
+    color:#616161;
+    line-height:1.5;
+}
+
+/* 최근 글 영역 CSS */
+.history-section{
+    margin-top:77px;
+}    
+.history-section .sec-tit{
+    margin-bottom:60px;
+    text-align:center;
+}   
+.history-section .history-list li{
+    width:100%;
+    margin-top:60px;
+}
+.history-section .history-list li:first-child{
+    margin-top:0;
+}
+.history-section .history-list li img{
+    display:inline-block;
+    width:30%;
+    height:auto;
+}
+.history-section .history-list li time{
+    display:block;
+    margin:11px 0 10px 0;
+    font-size:1.5vw;
+    color:#424242;
+}
+.history-section .history-list li .history-text{
+    display: inline-block;
+    color:#424242;
+    line-height:1.5;
+    margin-left: 5%;
+    font-size: 20px;
+    width: 50%;
+}
+.history-section .history-list li .history-text h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px){
+    /* 디스플레이 영역 CSS */
+    .introduce-display{
+        margin-top:95px;
+    }
+        
+    /* 프로모션 영역 CSS */
+    .introduce-promotion{
+        margin-top:110px;
+    }
+        
+    .introduce-promotion .promo-list li{
+        float:left;
+        width:30%;
+        margin-left:4%;
+        margin-top:0;
+    }
+
+    .introduce-promotion .promo-list li:first-child{
+        margin-left:0;
+    }
+        
+    /* 최근 글 영역 CSS */
+    .history-section{
+        margin-top:124px;
+    }    
+    .history-section .sec-tit{
+        margin-bottom:76px;
+    } 
+    .history-section .history-list li .history-text{
+        display: inline-block;
+        color:#424242;
+        font-weight:normal;
+        line-height:1.9;
+        margin-left: 5%;
+        font-size: 25px;
+        width: 50%;
+    }
+}
+
+/* PC용 CSS */
+@media all and (min-width:1132px){
+    /* 프로모션 영역 CSS */
+    .introduce-promotion .promo-list li{
+        width:30%;
+        margin-left:4%;
+    }    
+        
+    /* 최근 글 영역 CSS */
+    .history-section .sec-tit{
+        margin-bottom:76px;
+    }   
+}
