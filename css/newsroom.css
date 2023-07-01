@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 슬라이더 영역 CSS */
+.introduce-slider {
+    position: static;
+}
+.introduce-slider img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+/* 최근 글 영역 CSS */
+.history-section{
+    margin-top:77px;
+}    
+.history-section .sec-tit{
+    margin-bottom:60px;
+    text-align:center;
+}   
+.history-section .history-list li{
+    clear: both;
+    width:100%;
+    margin-top:60px;
+    padding: 5%;
+}
+.history-section .history-list li .history-image{
+    float: left;
+    width:30%;
+}
+.history-section .history-list li .history-image img{
+    width:100%;
+    height: auto;
+}
+.history-section .history-list li .history-text{
+    float: right;
+    color:#424242;
+    line-height:1.5;
+    margin-left: 5%;
+    font-size: 20px;
+    width: 60%;
+}
+.history-section .history-list li .history-text h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* PC용 CSS */
+@media all and (min-width:1132px){
+    /* 최근 글 영역 CSS */
+    .history-section .sec-tit{
+        margin-bottom:76px;
+    }   
+}
