@@ -69,34 +69,30 @@
     text-align:center;
 }   
 .history-section .history-list li{
+    clear: both;
     width:100%;
     margin-top:60px;
+    padding: 5%;
 }
-.history-section .history-list li:first-child{
-    margin-top:0;
-}
-.history-section .history-list li img{
-    display:inline-block;
+.history-section .history-list li .history-image{
+    float: left;
     width:30%;
-    height:auto;
 }
-.history-section .history-list li time{
-    display:block;
-    margin:11px 0 10px 0;
-    font-size:1.5vw;
-    color:#424242;
+.history-section .history-list li .history-image img{
+    width:100%;
+    height: auto;
 }
 .history-section .history-list li .history-text{
-    display: inline-block;
+    float: right;
     color:#424242;
     line-height:1.5;
     margin-left: 5%;
     font-size: 20px;
-    width: 50%;
+    width: 60%;
 }
 .history-section .history-list li .history-text h3{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 /* 태블릿용 CSS */
@@ -120,23 +116,6 @@
 
     .introduce-promotion .promo-list li:first-child{
         margin-left:0;
-    }
-        
-    /* 최근 글 영역 CSS */
-    .history-section{
-        margin-top:124px;
-    }    
-    .history-section .sec-tit{
-        margin-bottom:76px;
-    } 
-    .history-section .history-list li .history-text{
-        display: inline-block;
-        color:#424242;
-        font-weight:normal;
-        line-height:1.9;
-        margin-left: 5%;
-        font-size: 25px;
-        width: 50%;
     }
 }
 
