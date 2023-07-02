@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>UmSoft</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="shortcut icon" href="images/favicon/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="images/favicon/favicon.png">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+    <div id="header"></div>
+
+    <article class="contact-slider">
+        <img src="images/p-images/slide_contact.jpg" alt="">
+    </article>
+
+    <section class="content">
+        <section class="contact-promotion">
+            <div class="container">
+                <h2 class="sec-tit">CONTACT</h2></h2>
+                <ul class="promo-list">
+                    <li>
+                        <img src="images/s-images/ic_mail.png" alt="">
+                        <h3>leemoon63@gmail.com</h3>
+                    </li>
+                    <li>
+                        <img src="images/s-images/ic_github.png" alt="">
+                        <a href="https://github.com/leepro1" target="_blank"><h3>GitHub</h3></a>
+                    </li>
+                    <li>
+                        <img src="images/s-images/ic_blog.png" alt="">
+                        <a href="https://leepro1.github.io/" target="_blank"><h3>blog</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="form-box">
+                    <form action="" method="">
+                        <fieldset class="cfixed">
+                            <legend class="blind">CONTACT US</legend>
+                            <div class="form">
+                                <label for="name" class="blind">name</label>
+                                <input type="text" id="name" placeholder="이름을 입력하세요">
+                                <label for="phone" class="blind">phone</label>
+                                <input type="tel" id="phone" placeholder="전화번호를 입력하세요">
+                                <label for="email" class="blind">email</label>
+                                <input type="email" id="email" placeholder="이메일을 입력하세요">
+                            </div>
+                            <div class="textarea">
+                                <label for="message" class="blind">message</label>
+                                <textarea name="message" id="message" placeholder="내용을 입력하세요"></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="send-bin">
+                            <button>SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="umsoft-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.128475697272!2d126.73352399999999!3d37.457688399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7b86cbc8220d%3A0x4d0fc01e64599d89!2z7J247LKc6rSR7Jet7IucIOuCqOuPmeq1rCDrsLHrspTroZwxMjTrsojquLggNDM!5e0!3m2!1sko!2skr!4v1687537888325!5m2!1sko!2skr"
+        frameholder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>           
+    </div>
+
+    <div id="footer"></div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        })
+    </script>
+</body>
+</html>
