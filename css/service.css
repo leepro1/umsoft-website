@@ -39,17 +39,27 @@
 #slideShow{
     padding: 0;
     box-sizing: border-box;
-    width: 680px;
-    height: 480px;
+    width: 100%;
+    max-width: 680px;
+    height: 510px;
     position: relative;
-    margin: 50px auto;
-    overflow: hidden;  
+    margin: 0 auto;
+    overflow: hidden; 
 }
 .slides{
     position: absolute;
     left: 0;
     top: 0;
     transition: left 0.5s ease-out;
+}
+.slides img{
+    width: 45%;
+    padding-top: 150px;
+}
+.slides h1{
+    color:#3f51b5;
+    font-size: 20px;
+    padding-left: 20px;
 }
 .slides li:first-child{
     margin-left: 100px;
@@ -94,5 +104,23 @@
     /* 디스플레이 영역 CSS */
     .service-display{
         margin-top:95px;
+    }
+    /* 최근 작업 영역 CSS */
+    .slides img{
+        width: 100%;
+        padding-top: 0;
+    }
+    .slides h1{
+        text-align: center; 
+        color:#3f51b5;
+        font-size: 30px;
+    }    
+    .slides li:first-child{
+        margin-left: 100px;
+    }  
+    /* 슬라이드들 옆으로 정렬 */
+    .slides li:not(:last-child){
+        float: left;
+        margin-right: 100px;
     }
 }
