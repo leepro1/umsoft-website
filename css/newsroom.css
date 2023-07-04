@@ -2,10 +2,10 @@
 
 /* 모바일용 CSS */
 /* 슬라이더 영역 CSS */
-.introduce-slider {
+.newsroom-slider {
     position: static;
 }
-.introduce-slider img{
+.newsroom-slider img{
     display:block;
     width:100%;
     max-width:100%;
@@ -22,29 +22,42 @@
 }   
 .news-section .news-list li{
     clear: both;
-    width:100%;
-    margin-top:60px;
+    width:80%;
     padding: 5%;
+    margin: auto;
 }
 .news-section .news-list li .news-image{
     float: left;
     width:30%;
+    padding-right: 10%;
 }
 .news-section .news-list li .news-image img{
     width:100%;
     height: auto;
 }
 .news-section .news-list li .news-text{
-    float: right;
-    color:#424242;
+    color:#373737;
     line-height:1.5;
-    margin-left: 5%;
-    font-size: 20px;
-    width: 60%;
+    font-size: 1.5vw;
+    width: 100%;
 }
 .news-section .news-list li .news-text h3{
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 2vw;
+    padding-bottom: 2%;
+}
+.news-section .news-list li .news-text time{
+    color:#888686;
+    font-size: 1vw;
+}
+.divider {
+    margin-top: 20px;
+}
+
+/* 태블릿용 CSS */
+@media (min-width: 768px){
+    .divider {
+        margin-top: 100px;
+    }
 }
 
 /* PC용 CSS */
@@ -53,4 +66,8 @@
     .news-section .sec-tit{
         margin-bottom:76px;
     }   
+    
+    .divider {
+        margin-top: 10%;
+    }
 }
