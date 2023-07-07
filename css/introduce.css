@@ -61,42 +61,51 @@
 }
 
 /* 최근 글 영역 CSS */
-.history-section{
-    margin-top:77px;
-}    
 .history-section .sec-tit{
-    margin-bottom:60px;
-    text-align:center;
+    margin-top: 30px;
+    margin-bottom:30px;
+    text-align: center;
 }   
 .history-section .history-list li{
     clear: both;
-    width:100%;
-    margin-top:60px;
+    width:80%;
     padding: 5%;
+    margin: auto;
 }
 .history-section .history-list li .history-image{
     float: left;
     width:30%;
+    padding-right: 10%;
 }
 .history-section .history-list li .history-image img{
     width:100%;
     height: auto;
 }
 .history-section .history-list li .history-text{
-    float: right;
-    color:#424242;
+    color:#373737;
     line-height:1.5;
-    margin-left: 5%;
-    font-size: 20px;
-    width: 60%;
+    font-size: 1.5vw;
+    width: 100%;
 }
 .history-section .history-list li .history-text h3{
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 2vw;
+    padding-bottom: 2%;
+}
+.history-section .history-list li .history-text time{
+    color:#888686;
+    font-size: 1vw;
 }
 
 /* 태블릿용 CSS */
-@media all and (min-width:768px){
+@media (min-width: 768px){
+    /* 슬라이더 영역 CSS */
+    .introduce-slider img{
+        width:75%;
+        max-width:100%;
+        margin: 0 auto;
+        height:auto;
+    }
+    
     /* 디스플레이 영역 CSS */
     .introduce-display{
         margin-top:95px;
@@ -121,14 +130,20 @@
 
 /* PC용 CSS */
 @media all and (min-width:1132px){
+    /* 슬라이더 영역 CSS */
+    .introduce-slider img{
+        width:60%;
+    }
+    
     /* 프로모션 영역 CSS */
     .introduce-promotion .promo-list li{
         width:30%;
         margin-left:4%;
     }    
-        
+ 
     /* 최근 글 영역 CSS */
     .history-section .sec-tit{
+        margin-top:76px;
         margin-bottom:76px;
     }   
 }
